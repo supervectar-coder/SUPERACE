@@ -38,6 +38,23 @@
         height: 50px;
         vertical-align: middle;
     }
+	#notice {
+        background-color: #ffeb3b;
+        color: #010712;
+        padding: 10px 20px;
+        margin: 15px 0;
+        border-radius: 8px;
+        font-weight: bold;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        width: 90%;
+        max-width: 700px;
+    }
+    #notice a {
+        color: #010712;
+        text-decoration: underline;
+        font-weight: bold;
+    }
     #controls {
         display: flex;
         flex-wrap: wrap;
@@ -146,9 +163,16 @@
     <h1>SUPERVECTAR AceStream</h1>
 </header>
 
+<div id="notice">
+  ⚠️ Para reproducir los canales es necesario tener instalado el reproductor ACESTREAM: 
+  <a href="https://drive.google.com/file/d/1tYrt9DuNQZANYfL4ZciRVc2BCB8U370l/view?usp=drive_link" target="_blank">Descargar AceStream Android</a>.
+  <a href="https://drive.google.com/file/d/1gVip-QywfLAuZm9GlM2tNFaxm3yEW6Ne/view?usp=drive_link" target="_blank">Descargar AceStream Windows</a>.
+</div>
+
 <div id="controls">
+<div style="margin: 20px;">
     <input type="text" id="search" placeholder="Buscar canal...">
-    <button class="category-btn active" data-category="all">Todos</button>
+    <button class="category-btn active" data-category="all">Todos los canales</button>
     <button class="category-btn" data-category="MOVISTAR +">MOVISTAR +</button>	
     <button class="category-btn" data-category="M+ LA LIGA">M+ LA LIGA</button>
     <button class="category-btn" data-category="M+ LIGA CAMPEONES">M+ LIGA CAMPEONES</button>
@@ -158,7 +182,7 @@
     <button class="category-btn" data-category="DAZN F1">DAZN F1</button>
     <button class="category-btn" data-category="DAZN LA LIGA">DAZN LA LIGA</button>		
     <button class="category-btn" data-category="OTROS DEPORTES">OTROS DEPORTES</button>	
-    <button class="category-btn" data-category="entretenimiento">Entretenimiento</button>
+    <button class="category-btn" data-category="entretenimiento">ENTRETENIMIENTO</button>
 </div>
 
 <ul id="channelList">
